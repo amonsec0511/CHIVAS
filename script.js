@@ -36,17 +36,17 @@ buttonShow.onclick = function() {
 
 // Button to Double Deck
 buttonDouble.onclick = function() {
-    console.log("Deck has" + cards.lenght + "cards.");
+    console.log("Deck has" + cards.length + "cards.");
 };
     for (let card of cards){
-        if (cards.lenght !==16){
+        if (cards.length !==16){
             cards.push(card);
             game.insertAdjacentHTML ("beforeend", "<div style= 'background-image: url(" + urlPrefix + card +")' class='card'>"
  );
         }
     }
     buttonDouble.style.color = "silver";
-console.log("Now the deck has" + cards.lenght + "cards.");
+console.log("Now the deck has" + cards.length + "cards.");
 
 
 
